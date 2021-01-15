@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class ConstantsTest {
 
     @Test
-    public void constantsTest() {
+    public void visitCountTest() {
         assertEquals((double) 194 / 143, Constants.v2);
         assertEquals((double) 194 / 715, Constants.v3);
         assertEquals((double) 291 / 715, Constants.v4);
