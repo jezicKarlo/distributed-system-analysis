@@ -29,6 +29,4 @@ public class Constants {
     static final double v5 = c * (1 - h*g) / (1 - h * g - f * (d + h * e));
     static final double v6 = (d + h * e) / (1 - h * g - f * (d + h * e));
     static final double v7 = (e * (1 - h * g) + g * (d + h * e)) / (1 - h * g - f * (d + h * e));
-
-    static final double lambda = 1;
 }
