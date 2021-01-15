@@ -16,15 +16,15 @@ public class PDQReporter {
         pdq.CreateNode(name, Node.CEN, QDiscipline.FCFS);
     }
 
-    public void setVisits(String nodeName, String requestName, double visitCount, double serviceTime) {
-        pdq.SetVisits(nodeName, requestName, visitCount, serviceTime);
+    public void setVisits(String nodeName, double visitCount, double serviceTime) {
+        pdq.SetVisits(nodeName, "requests", visitCount, serviceTime);
     }
 
     public void solve() {
         pdq.Solve(Methods.CANON);
     }
 
-    public double getResidenceTime(String nodeName, String requestName) {
-        return pdq.GetResidenceTime(nodeName, requestName, Job.TRANS);
+    public double getResidenceTime(String nodeName) {
+        return pdq.GetResidenceTime(nodeName, "requests", Job.TRANS);
     }
 }
