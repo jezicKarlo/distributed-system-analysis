@@ -5,8 +5,6 @@ public class Constants {
     private Constants() {
     }
 
-    static final int NUMBER_OF_SERVERS = 1;
-
     private static final double a = 0.2;
     private static final double b = 0.3;
     private static final double c = 0.5;
